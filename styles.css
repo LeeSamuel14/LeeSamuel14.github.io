@@ -10,33 +10,61 @@ html {
     grid-template-columns: 1fr;
     background-color: white;
     border-radius: 20px;
-    margin: 10%;
+    align-self: center;
+    margin: 10% 30%;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .qr-img {
-    object-fit: scale-down;
     border-radius: 20px;
-    width: 90%;
-    height: 90%;
     justify-self: center;
-    margin-top:10px;
+    height: auto; 
+    width: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+    margin: 2%;
+
 }
 
 .qr-text-heading {
     margin-top: 5%;
-    padding:5%;
+    align-self: center;
     text-align: center;
     font-weight: 700;
     font-size: 1.5em;
+    padding: 4%;
 }
 
 .qr-text-content {
+    align-self: center;
     color: hsl(220, 15%, 55%);
     text-align: center;
     font-weight: 400;
     font-size: 1.2em;
-    padding: 5%;
-    padding-bottom: 10%;
+    padding: 4%;
+}
+
+@media (width < 1000px) {
+    .grid-container {
+        margin: 10% 30%;
+    }
+}
+
+@media (width < 910px) {
+    .grid-container {
+        margin: 10% 20%;
+    }
+}
+
+@media (width < 635px) {
+    .grid-container {
+        margin: 10% 10%;
+    }
+}
+@media (width < 450px) {
+    .grid-container {
+        margin: 10% 0%;
+    }
 }
 
 
